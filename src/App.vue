@@ -2,7 +2,9 @@
 <div>
   <HeaderComp />
     <main>
-
+      <SecOne />
+      <SecTwo />
+      <SecThree />
 
 
 
@@ -18,10 +20,16 @@
 
 <script>
 import HeaderComp from './components/HeaderComp.vue'
+import SecOne from './components/SecOne.vue'
+import SecTwo from './components/SecTwo.vue'
+import SecThree from './components/SecThree.vue'
 
 export default {
   components: {
     HeaderComp,
+    SecOne,
+    SecTwo,
+    SecThree,
    },
 }
 
@@ -38,4 +46,6 @@ export default {
 
 // NOTE come installare FontAwesame
 // NOTE come si può inserire uno style dentro l'altro?
+// NOTE come si può stampare gli elementi di un arrow ?
+// NOTE capire come dimicizzare le immagine sella SecThree
 </style>

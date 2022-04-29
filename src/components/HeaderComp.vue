@@ -3,13 +3,16 @@
 
             <img src="../assets/img/logo.png" alt="Logo">
             <div class="headerUl">
+                
                     <div v-for="(element, index) in ListName" v-bind:key="index">
                         <a href="#">{{element.name}}</a>
                     </div>
+
                     <div class="lens">
                         <div>JOIN US</div>
                         <img src="../assets/img/icons-search.svg" alt="" >
                     </div>
+
             </div>
 
 
@@ -37,7 +40,7 @@ export default {
                 name: 'Android'
             }, 
             {
-                name: 'Forum'
+                name: 'Forums'
             }, 
             {
                 name: 'Contact Us'

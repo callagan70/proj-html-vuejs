@@ -1,0 +1,28 @@
+[
+    {
+        "image" : "../assets/img/post_feat_img_25-320x202.jpg",
+        "desc" : "Telefonino uno",
+        "title" : "Lorem ipsum dolor sit amet consectetur",
+        "data" : "October 15th, 2015",
+        "comment" : "2 comment",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi ad molestias tempore quisquam,"
+    },
+
+    {
+        "image" : "../assets/img/post_feat_img_24-320x202.jpg",
+        "desc" : "Telefonino due",
+        "title" : "Adipisicing elit. Aut excepturi ad molestias",
+        "data" : "October 15th, 2015",
+        "comment" : "comment off",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi ad molestias tempore quisquam,"
+    },
+
+    {
+        "image" : "../assets/img/post_feat_img_23-320x202.jpg",
+        "desc" : "Orologio",
+        "title" : "Cumque voluptatem nihil cum facere",
+        "data" : "October 15th, 2015",
+        "comment" : "comment off",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi ad molestias tempore quisquam,"
+    }
+]

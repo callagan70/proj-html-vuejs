@@ -9,6 +9,7 @@
                     </div>
 
                     <div class="lens">
+<!-- FIXME Inserire una "a" al posto di "Join Us" -->
                         <div>JOIN US</div>
                         <img src="../assets/img/icons-search.svg" alt="" >
                     </div>

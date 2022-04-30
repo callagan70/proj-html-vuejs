@@ -11,6 +11,7 @@
       <SeC5 />
       <SeC6 />
       <SeC7 />
+      <FooTer />
     </main>
 </div>
 </template>
@@ -25,6 +26,7 @@ import SeC4 from './components/SeC4.vue'
 import SeC5 from './components/SeC5.vue'
 import SeC6 from './components/SeC6.vue'
 import SeC7 from './components/SeC7.vue'
+import FooTer from './components/FooTer.vue'
 
 export default {
   components: {
@@ -36,7 +38,8 @@ export default {
     SeC4,
     SeC5,
     SeC6,
-    SeC7
+    SeC7,
+    FooTer
    },
 }
 

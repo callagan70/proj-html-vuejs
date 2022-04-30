@@ -89,6 +89,7 @@ section{
     background-color: white;
     width: 250px;
     height: 250px;
+    border-top: 3px solid #27AFC3;
 }
 
 .row{

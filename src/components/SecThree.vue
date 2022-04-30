@@ -38,7 +38,7 @@
                 <img src="../assets/img/post_feat_img_25-320x202.jpg" alt="Telefonino uno">
                 <h1>{{SectOneData[0].title}}</h1>
                 <div class="commet">
-                    <div>{{SectOneData[0].data}} :</div>
+                    <div>{{SectOneData[0].data}}</div>
                     <div class="separazio"> | </div>
                     <div>{{SectOneData[0].comment}}</div>
 <!-- NOTE provare a mettere l'array con il dollaro -->
@@ -53,7 +53,7 @@
                 <div class="commet">
                     <div>{{SectOneData[1].data}}</div>
                     <div class="separazio"> | </div>
-                    <div>{{SectOneData[1].comment}} class= </div>
+                    <div>{{SectOneData[1].comment}}</div>
                 </div>
                 <h4>{{SectOneData[1].text}}</h4>
             </div>
@@ -90,7 +90,7 @@
                 <img src="../assets/img/post_feat_img_22-320x202.jpg" alt="Telefonino uno">
                 <h1>{{SectOneData[0].title}}</h1>
                 <div class="commet">
-                    <div>{{SectOneData[0].data}} :</div>
+                    <div>{{SectOneData[0].data}}</div>
                     <div class="separazio"> | </div>
                     <div>{{SectOneData[0].comment}}</div>
                 </div>
@@ -103,7 +103,7 @@
                 <div class="commet">
                     <div>{{SectOneData[1].data}}</div>
                     <div class="separazio"> | </div>
-                    <div>{{SectOneData[1].comment}} class= </div>
+                    <div>{{SectOneData[1].comment}}</div>
                 </div>
                 <h4>{{SectOneData[1].text}}</h4>
             </div>
@@ -123,7 +123,7 @@
         <br>
         <br>
 
-    <div class="sectThree">
+<div class="sectThree">
 
         <div class="sectThree_one">
             <div class="SectTwo_1">
@@ -138,8 +138,47 @@
         </div>    
         
         <div class="sectThree_two">
-            
 
+            <h1>Tutorials & Guides</h1>
+
+            <div class="sectThree_two_break"></div>
+            
+            <div class="sectThree_two_display">
+                    <div>
+                        <img src="../assets/img/post_feat_img_23-147x118.jpg" alt="Orologino">
+                    </div>
+                    <div>
+                        <div class="sectThree_two_display_1">
+                            {{SectOneData[2].title}}
+                        </div>
+                        <h5>{{SectOneData[1].data}} | {{SectOneData[2].comment}}</h5>
+                    </div>
+            </div>
+            <br>
+            <div class="sectThree_two_display">
+                    <div>
+                        <img src="../assets/img/post_feat_img_22-147x118.jpg" alt="Orologino">
+                    </div>
+                    <div>
+                        <div class="sectThree_two_display_1">
+                            {{SectOneData[2].title}}
+                        </div>
+                        <h5>{{SectOneData[1].data}} | {{SectOneData[2].comment}}</h5>
+                    </div>
+            </div>
+            <br>
+            <div class="sectThree_two_display">
+                    <div>
+                        <img src="../assets/img/post_feat_img_20-147x118.jpg" alt="Orologino">
+                    </div>
+                    <div>
+                        <div class="sectThree_two_display_1">
+                            {{SectOneData[2].title}}
+                        </div>
+                        <h5>{{SectOneData[1].data}} | {{SectOneData[2].comment}}</h5>
+                    </div>
+            </div>
+            
         </div>
  
     </div>
@@ -170,6 +209,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/data/HeaDer.scss";
 
     section{
         padding-top: 100px;
@@ -177,17 +217,6 @@ export default {
         padding-right: 20%;
     }
 
-    .header{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .header>div{
-        border: 2px solid orange;
-        width: 5%;
-        // background-image: ;
-    }
 
     .SectOne{
         display: flex;
@@ -231,7 +260,8 @@ export default {
         background-image: url('../assets/img/featured_article_1_bg.jpg');
         width: 100%;
         height: 550px;
-        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100%;
         color: white;
         padding-top: 300px;
         padding-left: 200px;
@@ -255,6 +285,12 @@ export default {
         color: white;
     }
 
+    .sectThree{
+        display: flex;
+        justify-items: space-around;
+
+    }
+
     .sectThree_one{
         width: 65%;
         height: 500px;
@@ -263,6 +299,33 @@ export default {
         margin-right: 1em;
         padding: 250px 200px 0px 200px;
         color: white;
+    }
+
+    .sectThree_two_break{
+        margin-top: 1em;
+        margin-bottom: 2em;
+        width: 100px;
+        border: 1px solid orange;
+    }
+
+    .sectThree_two_display{
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: start;
+    }
+
+    .sectThree_two_display_1{
+        margin-left: 10px;
+        font-size: 1em;
+        word-wrap: break-word;
+        width: 200px;
+        font-weight: 900;
+    }
+
+    .sectThree_two_display>div h5{
+        font-size: 0.8;
+        margin-left: 10px;
+        opacity: 0.6;
     }
 
 

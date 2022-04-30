@@ -5,6 +5,8 @@
       <SecOne />
       <SecTwo />
       <SecThree />
+      <DivCom />
+      <SeC4 />
 
 
 
@@ -23,6 +25,8 @@ import HeaderComp from './components/HeaderComp.vue'
 import SecOne from './components/SecOne.vue'
 import SecTwo from './components/SecTwo.vue'
 import SecThree from './components/SecThree.vue'
+import DivCom from './components/DivCom.vue'
+import SeC4 from './components/SeC4.vue'
 
 export default {
   components: {
@@ -30,6 +34,8 @@ export default {
     SecOne,
     SecTwo,
     SecThree,
+    DivCom,
+    SeC4,
    },
 }
 

@@ -3,16 +3,26 @@
 
             <img src="../assets/img/logo.png" alt="Logo">
             <div class="headerUl">
-                
-                    <div v-for="(element, index) in ListName" v-bind:key="index">
-                        <a href="#">{{element.name}}</a>
+
+                <div>
+                    <div v-for="(element, index) in HeaderDatas" v-bind:key="index" class="list">
+
+                        <div>    
+                            <a href="#">{{element.name}}</a>
+                        </div>
+
+                        <div class="triangle">
+
+                        </div>
+
                     </div>
 
-                    <div class="lens">
-<!-- FIXME Inserire una "a" al posto di "Join Us" -->
-                        <div>JOIN US</div>
-                        <img src="../assets/img/icons-search.svg" alt="" >
-                    </div>
+                </div>
+
+                <div class="lens">
+                        <div><a href="#">JOIN US</a></div>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
 
             </div>
 
@@ -21,31 +31,16 @@
 </template>
 
 <script>
+import HeaderData from "../assets/data/HeaderData.json";
+
 
 export default {
     name: 'HeaderComp',
 
     data(){
         return{
-        ListName:[ 
-            {
-                name: 'Home'
-            }, 
-            {
-                name: 'Apple'
-            }, 
-            {
-                name: 'Microsoft'
-            }, 
-            {
-                name: 'Android'
-            }, 
-            {
-                name: 'Forums'
-            }, 
-            {
-                name: 'Contact Us'
-            },] 
+        HeaderDatas: HeaderData,
+
        }
        
     },
@@ -76,12 +71,37 @@ export default {
         .headerUl>div{
             display: flex;
             align-items: center;
+            justify-content: center;
         }
 
-        .headerUl>div>a{
+        .list{
+                // display: flex;
+                position: relative;
+                // flex-direction: column;
+                // align-items: center;            
+        }
+
+        .list:hover>div{
+            display: block;
+        }
+
+                .triangle {
+                    display: none;
+                    position: relative;
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-top: 20px solid #26A9BD;
+                    border-right: 10px solid transparent;
+                    top: 50px;
+                }
+
+
+        .headerUl>div>div a{
             color: white;
             text-decoration: none;
             margin-right: 2em;
+
         }
 
         .lens{
@@ -91,20 +111,21 @@ export default {
             margin-left: 1em;
         }
 
-        .lens img{
+        .lens i{
             width: 1em;
             color: white;
             margin-left: 3em;
-            cursor: help;
         }
 
         .lens>div{
-            color: white;
             background-color: black;
             padding: 10px 20px 10px 20px;
-            border-radius: 10px;
-            cursor: pointer;
+            border-radius: 5px;
         }
 
+        .lens>div a{
+            color: white;
+            text-decoration: none;
+        }
 
 </style>

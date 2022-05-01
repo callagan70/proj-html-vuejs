@@ -3,7 +3,7 @@
       <div>
         <h1>Tech Forum!</h1>
         <h3>Discuss all the lates tecnology news and trends</h3>
-        <div>GET AWADA NOW: ></div>
+        <div>GET AWADA NOW! ></div>
       </div>
 
   </section>

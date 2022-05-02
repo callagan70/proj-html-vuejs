@@ -11,9 +11,7 @@
                             <a href="#">{{element.name}}</a>
                         </div>
 
-                        <div class="triangle">
-
-                        </div>
+                        <div class="triangle"></div>
 
                     </div>
 
@@ -75,15 +73,18 @@ export default {
         }
 
         .list{
-                // display: flex;
+                display: flex;
                 position: relative;
-                // flex-direction: column;
-                // align-items: center;            
+                margin-right: 2em;
+                flex-direction: column;
+                align-items: center;            
         }
 
         .list:hover>div{
             display: block;
         }
+
+        // NOTE non capisco perché il triangolo spinga sopra
 
                 .triangle {
                     display: none;
@@ -100,7 +101,7 @@ export default {
         .headerUl>div>div a{
             color: white;
             text-decoration: none;
-            margin-right: 2em;
+
 
         }
 

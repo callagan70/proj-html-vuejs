@@ -27,20 +27,16 @@
             <h4>{{element.text}}</h4>
         </div> -->
 
-        <!-- </div> -->
-            <!-- <div><img :src="../assets/img/post_feat_img_25-320x202.jpg" alt="Telefonino"></div>
-            <div><img :src="../assets/img/post_feat_img_24-320x202.jpg" alt=""></div>
-            <div><img :src="../assets/img/post_feat_img_23-320x202.jpg" alt=""></div> -->
-
         <div class="SectOne">
             <!-- FIXME dinamiccizare i commeti -->
             <div>
-                <img src="../assets/img/post_feat_img_25-320x202.jpg" alt="Telefonino uno">
-                <h1>{{SectOneData[0].title}}</h1>
+<!-- <div class="img_1" :style=" { backgroundImage: `url(../assets/img/post_feat_img_25-320x202.jpg )` }"> -->
+                <div class="img_1" :style=" { backgroundImage: `url(${SectOneData[0].image})` }"></div>
+
+                    <!-- <img src="../assets/img/post_feat_img_25-320x202.jpg" alt="Telefonino due"> -->
+                    <h1>{{SectOneData[0].title}}</h1>
                 <div class="commet">
-                    <div>{{SectOneData[0].data}}</div>
-                    <div class="separazio"> | </div>
-                    <div>{{SectOneData[0].comment}}</div>
+                    <div>{{SectOneData[0].data}} | {{SectOneData[0].comment}}</div>
 <!-- NOTE provare a mettere l'array con il dollaro -->
                      <!-- :class="(SectOneData[0].comment == "2 comment") ? 'commentClass1' : 'commentClass2' " -->
                 </div>
@@ -48,12 +44,11 @@
             </div>
 
             <div>
+                <!-- <img :src=" `${SectOneData[1].image}` " alt="Telefonino due"> -->
                 <img src="../assets/img/post_feat_img_24-320x202.jpg" alt="Telefonino due">
                 <h1>{{SectOneData[1].title}}</h1>
                 <div class="commet">
-                    <div>{{SectOneData[1].data}}</div>
-                    <div class="separazio"> | </div>
-                    <div>{{SectOneData[1].comment}}</div>
+                    <div>{{SectOneData[1].data}} | {{SectOneData[1].comment}}</div>
                 </div>
                 <h4>{{SectOneData[1].text}}</h4>
             </div>
@@ -62,9 +57,7 @@
                 <img src="../assets/img/post_feat_img_23-320x202.jpg" alt="Orologio">
                 <h1>{{SectOneData[2].title}}</h1>
                  <div class="commet">
-                    <div>{{SectOneData[2].data}}</div>
-                    <div class="separazio"> | </div>
-                    <div>{{SectOneData[2].comment}}</div>
+                    <div>{{SectOneData[2].data}} | {{SectOneData[2].comment}}</div>
                 </div>
                 <h4>{{SectOneData[2].text}}</h4>
             </div>
@@ -221,33 +214,32 @@ export default {
     .SectOne{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         text-align: left;
     }
 
     .SectOne>div{
-        width: calc((100%/3) - 10px);
+        width: calc((100%/3) - 2em);
     }
 
     .SectOne>div>h1{
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
-     .SectOne>div>h4{
+     .SectOne>div h4{
         font-size: 0.8em;
-        opacity: 0.8;
+        opacity: 0.6;
         text-align: left;
-        line-height: 1;
+        line-height: 1.6;
     }
 
     .commet{
         display: flex;
         flex-wrap: wrap;
         font-size: 0.8em;
-        margin-top: 1em;
         margin-bottom: 1em;
-        opacity: 0.7;
+        opacity: 0.6;
     }
 
     .separazio{
@@ -328,7 +320,15 @@ export default {
         opacity: 0.6;
     }
 
+     .img_1{
+         width: 100%;
+        //  background-image: url('../assets/img/post_feat_img_25-320x202.jpg');
+         height: 202px;
+     }
 
+     .SectOne>div img{
+         width: 100%;
+     }
 
 
 </style>

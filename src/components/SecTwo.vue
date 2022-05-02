@@ -1,7 +1,7 @@
 <template>
   <section>
       <h1>AVADA FORUM IS THE PLACE TO BE</h1>
-      <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia minima facere aut dignissimos labore distinctio quaerat, provident odio cum alias architecto dolorem ipsam eveniet ut sequi ad aliquam nesciunt earum.</h4>
+      <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia minima facere aut dignissimos labore distinctio quaerat, provident odio cum alias architecto dolorem.</h4>
   </section>
 </template>
 
@@ -25,6 +25,8 @@ export default {
     section h1{
         margin-bottom: 1em;
         font-size: 1em;
+        letter-spacing: 3px;
+        opacity: 0.6;
     }
 
         section h4{
@@ -32,6 +34,10 @@ export default {
             width: 30%;
             text-align: initial;
             font-weight: 300;
+            letter-spacing: 3px;
+            line-height:1.5em;
+            text-align: center;
+            opacity: 0.6;
     }
 
 </style>

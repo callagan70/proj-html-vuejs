@@ -2,27 +2,27 @@
     {
         "image" : "../assets/img/post_feat_img_25-320x202.jpg",
         "desc" : "Telefonino uno",
-        "title" : "Lorem ipsum dolor sit amet consectetur",
-        "data" : "October 15th, 2015",
+        "title" : "Morbi vitae dui euismod vulputate sollicitudin",
+        "data" : "October 11th, 2015",
         "comment" : "2 comment",
-        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi ad molestias tempore quisquam,"
+        "text" : "Donec finibus sit amet orci eget ultricie. Praesent posuere ante ut erat fringilla, vestibulum palcerat metus mattis. Aenean dictum vitae nisl"
     },
 
     {
         "image" : "../assets/img/post_feat_img_24-320x202.jpg",
         "desc" : "Telefonino due",
         "title" : "Adipisicing elit. Aut excepturi ad molestias",
-        "data" : "October 15th, 2015",
+        "data" : "October 11th, 2015",
         "comment" : "comment off",
-        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi ad molestias tempore quisquam,"
+        "text" : "Donec finibus sit amet orci eget ultricie. Praesent posuere ante ut erat fringilla, vestibulum palcerat metus mattis. Aenean dictum vitae nisl"
     },
 
     {
         "image" : "../assets/img/post_feat_img_23-320x202.jpg",
         "desc" : "Orologio",
         "title" : "Donec ornare pretium eget scelisque justo",
-        "data" : "October 15th, 2015",
+        "data" : "October 11th, 2015",
         "comment" : "comment off",
-        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi ad molestias tempore quisquam,"
+        "text" : "Donec finibus sit amet orci eget ultricie. Praesent posuere ante ut erat fringilla, vestibulum palcerat metus mattis. Aenean dictum vitae nisl"
     }
 ]

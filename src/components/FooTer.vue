@@ -1,8 +1,14 @@
 <template>
     <footer>
+    <div class="first">    
         <div>
-            <span><i class="fa-regular fa-copyright"></i></span> <span> Copyright 2012 - 2020 | </span> <span> AVADA theme fusion </span>  <span>| All Right Reserved | powered by</span> <span> WordPress</span>
+            <span class="copyR"><i class="fa-regular fa-copyright"></i></span>
+            <span class="opacity"> Copyright 2012 - 2020 |  AVADA theme by </span>
+            <span>Them fusion </span>
+            <span class="opacity">| All Right Reserved | powered by</span>
+            <span> WordPress</span>
         </div>
+
         <div class="logo">
             <div class="logo_card color_blue">
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>   
@@ -17,6 +23,12 @@
               <a href="#"><i class="fa-brands fa-youtube"></i></a>  
             </div>
         </div>
+    </div>
+
+        <div class="sign">
+            <div>Write with </div> <div><i class="fa-solid fa-heart"></i></div> <div> by The Saint</div>
+        </div>
+
     </footer>
 </template>
 
@@ -31,12 +43,16 @@ export default {
 <style scoped lang="scss">
 
 footer{
+
+    padding: 2em 20% 2em 20%;
+    height: fit-content;
+}
+
+.first{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 20% 2em 20%;
-    height: fit-content;
 }
 
 .logo{
@@ -53,6 +69,7 @@ footer{
     height: 3em;
     width: 3em;
     border-radius: 50%;
+    margin-right: 1em;
 }
 
 .logo_card>a>i{
@@ -73,7 +90,30 @@ footer{
 
 .color_red{
     background-color: #CD201F;
+}
 
+.copyR{
+    font-size: 0.5em;
+    vertical-align: top;
+    opacity: 0.7;
+}
+
+.opacity{
+    opacity: 0.7;
+}
+
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.sign i{
+    font-size: 2em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    color: red;
 }
 
 </style>
